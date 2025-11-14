@@ -3,7 +3,6 @@ import "./Profile.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import abesh from "./Common/Abesh.png"
 
-
 function Profile() {
     
   return (
@@ -121,9 +120,9 @@ and pointers.</h3>
   CONTACT
 </h1>
 
-<h2 className='cnt'>EMAIL : akabesh2000@gmail.com <br/><br/>
+<h3 className='cnt'>EMAIL : akabesh2000@gmail.com <br/><br/>
 MOBILE : +918248059974
-</h2>
+</h3>
 
 </div>
 
