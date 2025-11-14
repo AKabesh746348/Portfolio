@@ -8,6 +8,7 @@ function Profile() {
     
   return (
     <div>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <div className='background'><br/>
       <h2 className='ak'>ABESH KUMAR R</h2>
       <h2 className='python'>Python Full Stack Developer</h2>

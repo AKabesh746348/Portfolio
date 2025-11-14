@@ -1,3 +1,17 @@
+  @media (max-width: 767px) {
+      .container {
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+
+     @media (min-width: 768px) and (max-width: 1023px) {
+      /* ... */
+    }
+
+
 .background{
     background-color:black;
     height: 400vh;
