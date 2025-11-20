@@ -1,6 +1,6 @@
 .background{
     background-color:black;
-    height: 400vh;
+    height: 850vh;
 }
 
 .ak{
@@ -106,9 +106,9 @@
     margin-top: 60px;
 }
 
-@media only screen and (max-width: 431px){
+@media only screen and (max-width: 425px){
 .background{
-    height: 440vh;
+    height: 1200vh;
     background-color: black;
     
 }
@@ -150,7 +150,7 @@
 }
 
 .abesh{
-    width: 200px;
+    width: 220px;
     height: 250px;
     margin-left: 10px;
     margin-top: 240px;
@@ -218,4 +218,17 @@
 
 
 
+}
+
+@media only screen and (max-width: 375px){
+    .background{
+        height: 1300vh;
+    }
+    .front{
+        margin-left: 30px;
+    }
+    .tech{
+        margin-left: 10px;
+    }
+   
 }
