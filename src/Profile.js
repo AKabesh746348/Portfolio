@@ -2,6 +2,7 @@ import React from 'react'
 import "./Profile.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import abesh from "./Common/Abesh.png"
+import { MdOutlineAlternateEmail } from "react-icons/md";
 
 function Profile() {
     
@@ -120,10 +121,11 @@ and pointers.</h3>
   CONTACT
 </h1>
 
-<h3 className='cnt'>EMAIL : akabesh2000@gmail.com <br/><br/>
+<MdOutlineAlternateEmail className='email'/><h3 className='cnt'>EMAIL : akabesh2000@gmail.com <br/><br/>
 MOBILE : +918248059974
 </h3>
 
+<MdOutlineAlternateEmail className='email'/>
 </div>
 
 

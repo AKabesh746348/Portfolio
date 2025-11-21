@@ -1,6 +1,6 @@
 .background{
     background-color:black;
-    height: 850vh;
+    height: 380vh;
 }
 
 .ak{
@@ -24,6 +24,24 @@
 .tech{
     margin-left: 200px;
 }
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.front{
+    animation: fadein 2s ease-in-out infinite alternate;
+}
+
+
 
 .front{
     margin-top: 50px;
@@ -106,9 +124,12 @@
     margin-top: 60px;
 }
 
+.email{
+    margin-left: 100px;
+}
 @media only screen and (max-width: 425px){
 .background{
-    height: 1200vh;
+    height: fit-content;
     background-color: black;
     
 }
