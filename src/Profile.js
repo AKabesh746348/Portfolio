@@ -125,7 +125,6 @@ and pointers.</h3>
 MOBILE : +918248059974
 </h3>
 
-<MdOutlineAlternateEmail className='email'/>
 </div>
 
 
