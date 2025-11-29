@@ -121,7 +121,7 @@ and pointers.</h3>
   CONTACT
 </h1>
 
-<MdOutlineAlternateEmail className='email'/><h3 className='cnt'>EMAIL : akabesh2000@gmail.com <br/><br/>
+<h3 className='cnt'>EMAIL : akabesh2000@gmail.com <br/><br/>
 MOBILE : +918248059974
 </h3>
 
