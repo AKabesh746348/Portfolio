@@ -1,256 +1,817 @@
-.background{
-    background-color:black;
-    height: 380vh;
+// ========================================
+// GOOGLE FONTS & BASE
+// ========================================
+
+* {
+    box-sizing: border-box;
 }
 
-.ak{
-    color: whitesmoke;
-    margin-left: 30px;
-    opacity: 70%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.background {
+    background-color: #0a0a0f;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #e0e0e0;
 }
 
-.python{
-    margin-left: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: gray;
+// ========================================
+// HERO SECTION
+// ========================================
+.hero-section {
+    padding: 40px 40px 10px 40px;
 }
 
-.prof{
-    margin-left: 680px;
-    margin-top: 100px;
+.ak {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, #ffffff 0%, #60a5fa 50%, #818cf8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
 }
 
-.tech{
-    margin-left: 200px;
+.subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: #64748b;
+    letter-spacing: 2px;
+    margin-top: 8px;
+    text-transform: uppercase;
 }
-@keyframes fadein {
-    0%{
-        opacity: 1;
+
+// ========================================
+// SECTION HEADINGS
+// ========================================
+.section-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #e2e8f0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(90deg, #60a5fa, #818cf8);
+        border-radius: 2px;
+    }
+}
+
+.heading-icon {
+    font-size: 1.1em;
+    color: #60a5fa;
+}
+
+// ========================================
+// GLASSMORPHISM CARDS
+// ========================================
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+    transition: border-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        border-color: rgba(96, 165, 250, 0.2);
+        transform: translateY(-2px);
     }
 
-    50%{
-        opacity: 1;
+    &.wide {
+        margin: 0 30px;
     }
-    100%{
-        opacity: 1;
+
+    &.contact-card {
+        margin: 0 30px;
+        text-align: center;
     }
 }
 
-.front{
-    animation: fadein 2s ease-in-out infinite alternate;
+// ========================================
+// BODY TEXT
+// ========================================
+.body-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #94a3b8;
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-
-
-.front{
-    margin-top: 50px;
-    margin-left: 40px;
-    color: grey;
-    font-family: 'Courier New', Courier, monospace;
+// ========================================
+// CARD TITLES & SUBTITLES
+// ========================================
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: #cbd5e1;
+    margin-bottom: 8px;
 }
 
-.sum{
-    margin-top: 50px;
-    margin-left: 5px;
-    color: grey;
-    font-family: 'Courier New', Courier, monospace;
+.card-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #60a5fa;
+    margin-bottom: 16px;
+    margin-top: 8px;
 }
 
-.abesh{
+// ========================================
+// DETAIL CHIPS
+// ========================================
+.detail-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.chip {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #94a3b8;
+
+    &.highlight {
+        background: rgba(96, 165, 250, 0.1);
+        border-color: rgba(96, 165, 250, 0.3);
+        color: #60a5fa;
+    }
+}
+
+// ========================================
+// SKILLS LIST (soft skills)
+// ========================================
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: #94a3b8;
+        padding: 10px 0;
+        padding-left: 20px;
+        position: relative;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+
+        &::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #60a5fa;
+            font-size: 0.85rem;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+// ========================================
+// TRAINING SECTIONS
+// ========================================
+.training-block {
+    margin-bottom: 24px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.training-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        color: #94a3b8;
+        padding: 8px 0;
+        padding-left: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 4px;
+            top: 16px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #60a5fa, #818cf8);
+        }
+    }
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.2), transparent);
+    margin: 24px 0;
+}
+
+// ========================================
+// CONTACT
+// ========================================
+.contact-items {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #60a5fa;
+    }
+
+    .contact-icon {
+        font-size: 1.3rem;
+        color: #60a5fa;
+    }
+}
+
+// ========================================
+// GITHUB CTA BUTTON
+// ========================================
+.github-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 28px;
+    padding: 14px 32px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.1), rgba(129, 140, 248, 0.1));
+    border: 1px solid rgba(96, 165, 250, 0.3);
+    color: #e2e8f0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: linear-gradient(135deg, rgba(96, 165, 250, 0.2), rgba(129, 140, 248, 0.25));
+        border-color: rgba(96, 165, 250, 0.6);
+        color: #ffffff;
+        transform: translateY(-2px);
+        box-shadow: 0 0 20px rgba(96, 165, 250, 0.2), 0 0 40px rgba(129, 140, 248, 0.1);
+    }
+
+    .github-cta-icon {
+        font-size: 1.3rem;
+    }
+}
+
+// ========================================
+// CONTENT SECTIONS
+// ========================================
+.content-section {
+    padding: 20px 10px;
+}
+
+// ========================================
+// PROFILE IMAGE
+// ========================================
+.abesh {
     width: 400px;
     height: 450px;
     margin-left: 200px;
     margin-top: 70px;
 }
 
-.edu{
-    margin-left: 230px;
-    margin-top: 60px;
+// ========================================
+// FLOATING BADGES AROUND IMAGE
+// ========================================
+@keyframes badgeFloat {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
 }
 
-.ski{
-    margin-left: 300px;
-    margin-top: 60px;
+.image-container {
+    position: relative;
+    display: inline-block;
 }
 
-.prist{
-    color: gray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.floating-badge {
+    position: absolute;
+    font-family: 'Poppins', monospace;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 8px 14px;
+    animation: badgeFloat 3s ease-in-out infinite;
+    z-index: 2;
+    letter-spacing: 1px;
 }
 
-.bsc{
-    margin-left: 130px;
+.badge-1 {
+    // </>  — top-left
+    top: 40px;
+    left: 150px;
+    font-size: 1.1rem;
+    background: #22c55e;
+    color: #fff;
+    box-shadow: 0 0 16px rgba(34, 197, 94, 0.5);
+    animation-delay: 0s;
 }
 
-.skills{
-    margin-left: 150px;
-    color: gray;
+.badge-2 {
+    // #  — top-right
+    top: 100px;
+    right: -20px;
+    font-size: 1.2rem;
+    background: #a855f7;
+    color: #fff;
+    box-shadow: 0 0 16px rgba(168, 85, 247, 0.5);
+    animation-delay: 0.5s;
 }
 
-.pt{
-    margin-top: 80px;
-    margin-left: 420px;
+.badge-3 {
+    // \  — middle-right
+    top: 55%;
+    right: -10px;
+    font-size: 1.2rem;
+    background: #06b6d4;
+    color: #fff;
+    box-shadow: 0 0 16px rgba(6, 182, 212, 0.5);
+    animation-delay: 1s;
 }
 
-.greens{
-    margin-left: 30px;
-    color: gray;
+.badge-4 {
+    // { }  — bottom-left
+    bottom: 100px;
+    left: 150px;
+    font-size: 1.1rem;
+    background: #3b82f6;
+    color: #fff;
+    box-shadow: 0 0 16px rgba(59, 130, 246, 0.5);
+    animation-delay: 1.5s;
 }
 
-.green{
-    margin-top: 60px;
-    margin-left: 60px;
+.badge-5 {
+    // [ ]  — bottom-right
+    bottom: 30px;
+    right: -10px;
+    font-size: 1.1rem;
+    background: #10b981;
+    color: #fff;
+    box-shadow: 0 0 16px rgba(16, 185, 129, 0.5);
+    animation-delay: 2s;
 }
 
-.gtec{
-    color: grey;
-    margin-left: 30px;
-    margin-top: 60px;
+// ========================================
+// GLOWING SKILLS GRID
+// ========================================
+@keyframes glowPulse {
+    0% {
+        filter: drop-shadow(0 0 4px var(--glow-color));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 16px var(--glow-color)) drop-shadow(0 0 30px var(--glow-color));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 4px var(--glow-color));
+    }
 }
 
-.gte{
-    margin-left: 60px;
-}
-
-.ct{
-    margin-left: 630px;
-    margin-top: 90px;
-    color: gray;
-}
-
-.cnt{
-    margin-left: 500px;
-    margin-top: 60px;
-}
-
-.email{
-    margin-left: 100px;
-}
-@media only screen and (max-width: 425px){
-.background{
-    height: fit-content;
-    background-color: black;
-    
-}
-
-.ak{
-    color: whitesmoke;
-    margin-left: 20px;
-    opacity: 70%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.python{
-    margin-left: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: gray;
-}
-
-.prof{
-    margin-left: 150px;
-    margin-top: 100px;
-}
-
-.tech{
-    margin-left: 40px;
-}
-
-.front{
-    margin-top: 50px;
-    margin-left: 40px;
-    color: grey;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.sum{
-    margin-top: 50px;
-    margin-left: 5px;
-    color: grey;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.abesh{
-    width: 220px;
-    height: 250px;
-    margin-left: 10px;
-    margin-top: 240px;
-}
-
-.edu{
-    margin-left: 20px;
-    margin-top: 60px;
-}
-
-.ski{
-    margin-left: 40px;
-    margin-top: 60px;
-}
-
-.prist{
-    color: gray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.bsc{
-    margin-left: 5px;
-}
-
-.skills{
-    margin-left: 13px;
-    color: gray;
-}
-
-.pt{
-    margin-top: 80px;
-    margin-left: 30px;
-}
-
-.greens{
-    margin-left: 20px;
-    color: gray;
-}
-
-.green{
-    margin-top: 60px;
-    margin-left: 20px;
-}
-
-.gtec{
-    color: grey;
-    margin-left: 20px;
-    margin-top: 60px;
-}
-
-.gte{
-    margin-left: 20px;
-}
-
-.ct{
-    margin-left: 150px;
-    margin-top: 90px;
-    color: gray;
-}
-
-.cnt{
-    margin-left: 40px;
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
     margin-top: 40px;
+    margin-left: 20px;
+    padding: 10px;
 }
 
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
 
+    svg {
+        font-size: 40px;
+        color: var(--glow-color);
+        animation: glowPulse 3s ease-in-out infinite;
+    }
 
+    span {
+        font-size: 11px;
+        color: #64748b;
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.5px;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+
+        svg {
+            filter: drop-shadow(0 0 20px var(--glow-color)) drop-shadow(0 0 40px var(--glow-color));
+        }
+    }
 }
 
-@media only screen and (max-width: 375px){
-    .background{
-        height: 1300vh;
-        background-color: black;
+// ========================================
+// TABLET (max-width: 768px)
+// ========================================
+@media only screen and (max-width: 768px) {
+
+    .container-fluid .row .col-6,
+    .container-fluid .row>[class*="col-"] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
     }
-    .front{
-        margin-left: 30px;
+
+    .hero-section {
+        padding: 30px 20px 10px 20px;
     }
-    .tech{
+
+    .ak {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+
+    .abesh {
+        width: 280px;
+        height: 320px;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+
+    .glass-card {
+        padding: 24px;
+        margin: 15px 0;
+
+        &.wide,
+        &.contact-card {
+            margin: 0 15px;
+        }
+    }
+
+    .section-heading {
+        font-size: 1.1rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         margin-left: 10px;
     }
-   
+
+    .skill-icon svg {
+        font-size: 32px;
+    }
+
+    .contact-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .image-container {
+        display: block;
+        position: relative;
+        width: 280px;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .abesh {
+        margin-left: 0 !important;
+    }
+
+    .floating-badge {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+        border-radius: 8px;
+    }
+
+    .badge-1 {
+        top: 10px;
+        left: -45px;
+    }
+
+    .badge-2 {
+        top: 30px;
+        right: -50px;
+    }
+
+    .badge-3 {
+        top: 50%;
+        right: -55px;
+    }
+
+    .badge-4 {
+        bottom: 80px;
+        left: -45px;
+    }
+
+    .badge-5 {
+        bottom: 10px;
+        right: -50px;
+    }
+}
+
+// ========================================
+// MOBILE / LARGE PHONE (max-width: 480px)
+// ========================================
+@media only screen and (max-width: 480px) {
+
+    .container-fluid .row .col-6,
+    .container-fluid .row>[class*="col-"] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .background {
+        padding-bottom: 30px;
+    }
+
+    .hero-section {
+        padding: 20px 16px 8px 16px;
+    }
+
+    .ak {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+    }
+
+    .abesh {
+        width: 200px;
+        height: 230px;
+        margin-left: 0;
+        margin-top: 30px;
+        border-radius: 12px;
+    }
+
+    .glass-card {
+        padding: 20px;
+        margin: 12px 0;
+        border-radius: 12px;
+
+        &.wide,
+        &.contact-card {
+            margin: 0 10px;
+        }
+    }
+
+    .section-heading {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+
+    .body-text {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    .skill-icon svg {
+        font-size: 28px;
+    }
+
+    .skill-icon span {
+        font-size: 10px;
+    }
+
+    .skills-list li,
+    .training-list li {
+        font-size: 0.82rem;
+    }
+
+    .detail-chips {
+        gap: 8px;
+    }
+
+    .chip {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
+    .contact-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .contact-item {
+        font-size: 0.9rem;
+    }
+
+    .content-section {
+        padding: 10px 6px;
+    }
+
+    .image-container {
+        display: block;
+        position: relative;
+        width: 200px;
+        margin: 0 auto;
+        overflow: visible;
+    }
+
+    .floating-badge {
+        font-size: 0.7rem;
+        padding: 5px 9px;
+        border-radius: 7px;
+    }
+
+    .badge-1 {
+        top: 0px;
+        left: -40px;
+    }
+
+    .badge-2 {
+        top: 0px;
+        right: -45px;
+    }
+
+    .badge-3 {
+        top: 45%;
+        right: -50px;
+    }
+
+    .badge-4 {
+        bottom: 60px;
+        left: -40px;
+    }
+
+    .badge-5 {
+        bottom: 10px;
+        right: -45px;
+    }
+}
+
+// ========================================
+// SMALL PHONE (max-width: 375px)
+// ========================================
+@media only screen and (max-width: 375px) {
+    .hero-section {
+        padding: 16px 12px 6px 12px;
+    }
+
+    .ak {
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 0.75rem;
+    }
+
+    .abesh {
+        width: 170px;
+        height: 200px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .glass-card {
+        padding: 16px;
+        border-radius: 10px;
+
+        &.wide,
+        &.contact-card {
+            margin: 0 8px;
+        }
+    }
+
+    .section-heading {
+        font-size: 0.9rem;
+    }
+
+    .body-text {
+        font-size: 0.8rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+
+    .skill-icon svg {
+        font-size: 24px;
+    }
+
+    .skill-icon span {
+        font-size: 9px;
+    }
+
+    .skills-list li,
+    .training-list li {
+        font-size: 0.78rem;
+    }
+
+    .contact-item {
+        font-size: 0.85rem;
+    }
+
+    .floating-badge {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+        border-radius: 6px;
+    }
+
+    .badge-1 {
+        top: 0px;
+        left: 5px;
+    }
+
+    .badge-2 {
+        top: 0px;
+        right: 20px;
+    }
+
+    .badge-3 {
+        top: 42%;
+        right: 10px;
+    }
+
+    .badge-4 {
+        bottom: 50px;
+        left: 5px;
+    }
+
+    .badge-5 {
+        bottom: 5px;
+        right: 20px;
+    }
 }
