@@ -5,8 +5,8 @@ import abesh from "./Common/Abesh.png"
 import { MdOutlineAlternateEmail, MdPhone } from "react-icons/md";
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaJava, FaGithub, FaGraduationCap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiMongodb, SiMysql, SiPostman, SiCplusplus } from "react-icons/si";
-import { TbLetterC } from "react-icons/tb";
+import { SiMongodb, SiMysql, SiPostman, SiCplusplus, SiFlask } from "react-icons/si";
+
 
 function Profile() {
 
@@ -35,21 +35,22 @@ function Profile() {
               </div>
             </div>
             <div class="col-6">
-              <br /><br /><br /><br /><br /><br /><br />
-              <h2 className='section-heading'>TECHNICAL SKILLS</h2>
-              <div className='skills-grid'>
-                <div className='skill-icon' style={{ '--glow-color': '#E44D26' }}><FaHtml5 /><span>HTML</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#1572B6' }}><FaCss3Alt /><span>CSS</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#F7DF1E' }}><IoLogoJavascript /><span>JavaScript</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#61DAFB' }}><FaReact /><span>ReactJS</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#3776AB' }}><FaPython /><span>Python</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#ED8B00' }}><FaJava /><span>Java</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#A8B9CC' }}><TbLetterC /><span>C</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#00599C' }}><SiCplusplus /><span>C++</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#47A248' }}><SiMongodb /><span>MongoDB</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#4479A1' }}><SiMysql /><span>MySQL</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#FF6C37' }}><SiPostman /><span>Postman</span></div>
-                <div className='skill-icon' style={{ '--glow-color': '#ffffff' }}><FaGithub /><span>GitHub</span></div>
+              <div className='technical-skills-wrapper'>
+                <h2 className='section-heading'>TECHNICAL SKILLS</h2>
+                <div className='skills-grid'>
+                  <div className='skill-icon' style={{ '--glow-color': '#E44D26' }}><FaHtml5 /><span>HTML</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#1572B6' }}><FaCss3Alt /><span>CSS</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#F7DF1E' }}><IoLogoJavascript /><span>JavaScript</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#61DAFB' }}><FaReact /><span>ReactJS</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#3776AB' }}><FaPython /><span>Python</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#ED8B00' }}><FaJava /><span>Java</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#FFFFFF' }}><SiFlask /><span>Flask</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#00599C' }}><SiCplusplus /><span>C++</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#47A248' }}><SiMongodb /><span>MongoDB</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#4479A1' }}><SiMysql /><span>MySQL</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#FF6C37' }}><SiPostman /><span>Postman</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': '#ffffff' }}><FaGithub /><span>GitHub</span></div>
+                </div>
               </div>
             </div>
 

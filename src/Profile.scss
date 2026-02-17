@@ -431,6 +431,10 @@
     }
 }
 
+.technical-skills-wrapper {
+    margin-top: 15rem;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -450,7 +454,7 @@
     svg {
         font-size: 40px;
         color: var(--glow-color);
-        animation: glowPulse 3s ease-in-out infinite;
+        transition: filter 0.3s ease;
     }
 
     span {
@@ -519,6 +523,10 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         margin-left: 10px;
+    }
+
+    .technical-skills-wrapper {
+        margin-top: 30px !important;
     }
 
     .skill-icon svg {
