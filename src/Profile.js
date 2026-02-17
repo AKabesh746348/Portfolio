@@ -120,7 +120,7 @@ function Profile() {
               <span className='chip highlight'>April – Present</span>
               <p className='card-subtitle'>Python Full Stack Web Developer (Frontend &amp; Backend Development)</p>
               <ul className='training-list'>
-                <li>Gaining hands-on experience building E-commerce and portfolio web applications using Python (Flask), HTML, CSS, JavaScript, Bootstrap, and ReactJS</li>
+                <li>Gaining hands-on experience building cloud notepad(DevVault) and portfolio web applications using Python (Flask), HTML, CSS, JavaScript, Bootstrap, and ReactJS</li>
                 <li>Developing both frontend and backend components and integrating RESTful APIs</li>
                 <li>Managing databases with MongoDB and MySQL</li>
                 <li>Testing APIs using Postman and version control with GitHub</li>
