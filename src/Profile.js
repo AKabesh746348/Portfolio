@@ -91,6 +91,18 @@ function Profile() {
                         <span className='chip'>GPA: 7.8</span>
                         <span className='chip highlight'>First-Class</span>
                       </div>
+
+                      <div className='divider'></div>
+
+                      <h3 className='card-title'>Master of Computer Applications (MCA)</h3>
+                      <p className='body-text'>
+                        Annamalai University, Chidambaram, Tamil Nadu
+                      </p>
+                      <div className='detail-chips'>
+                        <span className='chip'>Computer Applications</span>
+                        <span className='chip'>GPA: 7.17</span>
+                        <span className='chip highlight'>First-Class</span>
+                      </div>
                     </div>
                   </div>
                   <div class="col-6">
