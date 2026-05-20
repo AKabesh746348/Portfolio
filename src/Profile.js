@@ -129,7 +129,7 @@ function Profile() {
 
             <div className='training-block'>
               <h3 className='card-title'>Greens Technologies, Anna Nagar, Chennai</h3>
-              <span className='chip highlight'>April – Present</span>
+              <span className='chip highlight'> Nov 2025 - Feb 2026</span>
               <p className='card-subtitle'>Python Full Stack Web Developer (Frontend &amp; Backend Development)</p>
               <ul className='training-list'>
                 <li>Gaining hands-on experience building cloud notepad(DevVault) and portfolio web applications using Python (Flask), HTML, CSS, JavaScript, Bootstrap, and ReactJS</li>
