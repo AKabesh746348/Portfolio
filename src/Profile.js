@@ -99,7 +99,7 @@ function Profile() {
                         Annamalai University, Chidambaram, Tamil Nadu
                       </p>
                       <div className='detail-chips'>
-                        <span className='chip'>Computer Applications</span>
+                        <span className='chip'>2022 - 2024</span>
                         <span className='chip'>GPA: 7.17</span>
                         <span className='chip highlight'>First-Class</span>
                       </div>
