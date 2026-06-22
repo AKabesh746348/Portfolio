@@ -161,36 +161,6 @@ function Profile() {
 
             <div className='project-entry'>
               <div className='project-entry-header'>
-                <h3 className='card-title'>Chat-with-PDF (RAG) Q&amp;A Bot</h3>
-                <div className='project-stack-chips'>
-                  <span className='chip'>Python</span><span className='chip'>ChromaDB</span><span className='chip'>sentence-transformers</span><span className='chip'>Streamlit</span>
-                </div>
-              </div>
-              <ul className='training-list'>
-                <li>Built an end-to-end RAG app that answers questions over uploaded PDFs using local MiniLM embeddings and a ChromaDB vector store, with source citations</li>
-                <li>Grounded responses to retrieved context and capped output tokens to prevent hallucination and minimise cost</li>
-              </ul>
-            </div>
-
-            <div className='divider'></div>
-
-            <div className='project-entry'>
-              <div className='project-entry-header'>
-                <h3 className='card-title'>Full-Stack GenAI FAQ Chatbot</h3>
-                <div className='project-stack-chips'>
-                  <span className='chip'>Flask</span><span className='chip'>ReactJS</span><span className='chip'>ChromaDB</span><span className='chip'>LLM API</span>
-                </div>
-              </div>
-              <ul className='training-list'>
-                <li>Developed a full-stack AI FAQ assistant with a Flask RESTful backend and ReactJS chat UI, using retrieval to ground answers in a knowledge base</li>
-                <li>Reduced token cost with rolling-summary chat history and caching of repeated queries</li>
-              </ul>
-            </div>
-
-            <div className='divider'></div>
-
-            <div className='project-entry'>
-              <div className='project-entry-header'>
                 <h3 className='card-title'>Cloud-Based Notepad (DevVault)</h3>
                 <div className='project-stack-chips'>
                   <span className='chip'>Flask</span><span className='chip'>MongoDB</span><span className='chip'>MySQL</span><span className='chip'>ReactJS</span>
@@ -221,27 +191,14 @@ function Profile() {
 
             <div className='project-entry'>
               <div className='project-entry-header'>
-                <h3 className='card-title'>Mini Multi-Tool Agent</h3>
+                <h3 className='card-title'>Email Sender</h3>
                 <div className='project-stack-chips'>
-                  <span className='chip'>Python</span><span className='chip'>LLM Function Calling</span><span className='chip'>ReAct Pattern</span>
+                  <span className='chip'>JavaScript</span><span className='chip'>HTML</span><span className='chip'>CSS</span>
                 </div>
               </div>
               <ul className='training-list'>
-                <li>Implemented a tool-using agent (ReAct pattern) with LLM function calling for calculator, date/time, and lookup tools, with step caps to bound token usage</li>
-              </ul>
-            </div>
-
-            <div className='divider'></div>
-
-            <div className='project-entry'>
-              <div className='project-entry-header'>
-                <h3 className='card-title'>Review Sentiment Classifier</h3>
-                <div className='project-stack-chips'>
-                  <span className='chip'>Python</span><span className='chip'>Hugging Face</span><span className='chip'>LoRA/PEFT</span><span className='chip'>scikit-learn</span>
-                </div>
-              </div>
-              <ul className='training-list'>
-                <li>Built and evaluated a sentiment classifier (accuracy, F1, confusion matrix), comparing a zero-cost few-shot baseline against a LoRA fine-tuned model</li>
+                <li>Built a responsive frontend email-sending interface with form validation and dynamic feedback on submission status</li>
+                <li>Implemented clean UI components with vanilla JavaScript for handling user input and API interactions</li>
               </ul>
             </div>
 
