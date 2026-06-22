@@ -6,6 +6,7 @@ import { MdOutlineAlternateEmail, MdPhone } from "react-icons/md";
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaJava, FaGithub, FaGraduationCap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb, SiMysql, SiPostman, SiCplusplus, SiFlask } from "react-icons/si";
+import { GitHubProjects, AskMeBot } from "./PortfolioWidgets";
 
 
 function Profile() {
@@ -153,6 +154,25 @@ function Profile() {
                 <li>Strengthened knowledge of C/C++ concepts like memory management and pointers</li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* GITHUB PROJECTS */}
+        <div className='content-section'>
+          <div className='glass-card wide'>
+            <h2 className='section-heading'><FaGithub className='heading-icon' />GITHUB PROJECTS</h2>
+            <GitHubProjects />
+          </div>
+        </div>
+
+        {/* ASK ME */}
+        <div className='content-section'>
+          <div className='glass-card wide'>
+            <h2 className='section-heading'>ASK ME ANYTHING</h2>
+            <p className='body-text' style={{ marginBottom: '20px' }}>
+              Have a question about my background, skills, or projects? Ask the AI assistant below.
+            </p>
+            <AskMeBot />
           </div>
         </div>
 
