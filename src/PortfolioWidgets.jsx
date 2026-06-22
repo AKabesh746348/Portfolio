@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 
 const GITHUB_USER = 'AKabesh746348';
 const CHAT_API = process.env.REACT_APP_CHAT_API || 'http://localhost:5002/chat';
+const EXCLUDE_REPOS = ['TextLens'];
 
 export function GitHubProjects() {
   const [repos, setRepos] = useState([]);
@@ -13,7 +14,7 @@ export function GitHubProjects() {
       .then(r => r.json())
       .then(data => {
         if (Array.isArray(data)) {
-          setRepos(data.filter(r => !r.fork));
+          setRepos(data.filter(r => !r.fork && !EXCLUDE_REPOS.includes(r.name)));
         } else {
           setError('Could not load repos.');
         }

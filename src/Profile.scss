@@ -746,6 +746,37 @@
 }
 
 // ========================================
+// INLINE PROJECT ENTRIES
+// ========================================
+.project-entry {
+    margin-bottom: 8px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.project-entry-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    .card-title {
+        margin-bottom: 0;
+    }
+}
+
+.project-stack-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+// ========================================
 // GITHUB PROJECTS GRID
 // ========================================
 .github-projects-grid {

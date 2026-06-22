@@ -3,7 +3,7 @@ import "./Profile.scss"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import abesh from "./Common/Abesh.png"
 import { MdOutlineAlternateEmail, MdPhone } from "react-icons/md";
-import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaJava, FaGithub, FaGraduationCap } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaJava, FaGithub, FaGraduationCap, FaCode } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb, SiMysql, SiPostman, SiCplusplus, SiFlask } from "react-icons/si";
 import { GitHubProjects, AskMeBot } from "./PortfolioWidgets";
@@ -20,7 +20,7 @@ function Profile() {
         {/* HERO SECTION */}
         <div className='hero-section'>
           <h1 className='ak'>ABESH KUMAR</h1>
-          <p className='subtitle'>Python Full Stack Developer</p>
+          <p className='subtitle'>Generative AI Developer</p>
         </div>
 
         <div class="container-fluid">
@@ -60,17 +60,16 @@ function Profile() {
               <div className='glass-card'>
                 <h2 className='section-heading'>PROFILE</h2>
                 <p className='body-text'>
-                  Strong foundation in Python, Java (SE &amp; EE), C, and C++, with hands-on
-                  experience in HTML, CSS, JavaScript, ReactJS, MongoDB, MySQL, Postman,
-                  and GitHub. Learning full-stack development and eager to apply technical
-                  skills in real projects. Quick learner, motivated to gain experience, work with
-                  a team, and grow in software development.
+                  Generative AI Developer with an MCA background and a Python full-stack foundation.
+                  Hands-on with Retrieval-Augmented Generation (RAG), embeddings, vector databases,
+                  prompt engineering, and agent/tool-calling — building cost-efficient LLM applications
+                  using Flask and ReactJS.
                 </p>
                 <p className='body-text'>
-                  Studied Computer Science fundamentals and core IT concepts.
-                  Gained proficiency in Python, Java, C, and C++.
-                  Developed practical software development skills through coursework
-                  and projects. Acquired hands-on experience in programming and IT applications.
+                  Experienced building secure, responsive web applications, designing RESTful APIs,
+                  and managing SQL/NoSQL databases. Proven capability to assume full task ownership,
+                  learn rapidly, and deliver quality software. Seeking a Generative AI or Python
+                  Full Stack role to apply and grow these skills.
                 </p>
               </div>
             </div>
@@ -130,15 +129,13 @@ function Profile() {
 
             <div className='training-block'>
               <h3 className='card-title'>Greens Technologies, Anna Nagar, Chennai</h3>
-              <span className='chip highlight'> Nov 2025 - Feb 2026</span>
-              <p className='card-subtitle'>Python Full Stack Web Developer (Frontend &amp; Backend Development)</p>
+              <span className='chip highlight'>April 2025 — Present</span>
+              <p className='card-subtitle'>Python Full Stack &amp; Generative AI Developer</p>
               <ul className='training-list'>
-                <li>Gaining hands-on experience building cloud notepad(DevVault) and portfolio web applications using Python (Flask), HTML, CSS, JavaScript, Bootstrap, and ReactJS</li>
-                <li>Developing both frontend and backend components and integrating RESTful APIs</li>
-                <li>Managing databases with MongoDB and MySQL</li>
-                <li>Testing APIs using Postman and version control with GitHub</li>
-                <li>Implementing responsive web design for multiple devices and screen sizes</li>
-                <li>Acquiring practical experience with the full software development lifecycle (SDLC)</li>
+                <li>Gained execution mastery over the complete SDLC; structured complex web components and integrated custom RESTful APIs using Flask and ReactJS</li>
+                <li>Built Generative AI features — RAG pipelines, embeddings, vector databases (ChromaDB/FAISS), prompt engineering, and LLM tool-calling agents</li>
+                <li>Governed concurrent data structures via MongoDB &amp; MySQL; validated endpoints with Postman and versioned via GitHub</li>
+                <li>Developed and deployed full-stack AI applications including a Chat-with-PDF bot, FAQ chatbot, and e-commerce platform</li>
               </ul>
             </div>
 
@@ -154,6 +151,100 @@ function Profile() {
                 <li>Strengthened knowledge of C/C++ concepts like memory management and pointers</li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* PROJECTS */}
+        <div className='content-section'>
+          <div className='glass-card wide'>
+            <h2 className='section-heading'><FaCode className='heading-icon' />PROJECTS</h2>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>Chat-with-PDF (RAG) Q&amp;A Bot</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>Python</span><span className='chip'>ChromaDB</span><span className='chip'>sentence-transformers</span><span className='chip'>Streamlit</span>
+                </div>
+              </div>
+              <ul className='training-list'>
+                <li>Built an end-to-end RAG app that answers questions over uploaded PDFs using local MiniLM embeddings and a ChromaDB vector store, with source citations</li>
+                <li>Grounded responses to retrieved context and capped output tokens to prevent hallucination and minimise cost</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>Full-Stack GenAI FAQ Chatbot</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>Flask</span><span className='chip'>ReactJS</span><span className='chip'>ChromaDB</span><span className='chip'>LLM API</span>
+                </div>
+              </div>
+              <ul className='training-list'>
+                <li>Developed a full-stack AI FAQ assistant with a Flask RESTful backend and ReactJS chat UI, using retrieval to ground answers in a knowledge base</li>
+                <li>Reduced token cost with rolling-summary chat history and caching of repeated queries</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>Cloud-Based Notepad (DevVault)</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>Flask</span><span className='chip'>MongoDB</span><span className='chip'>MySQL</span><span className='chip'>ReactJS</span>
+                </div>
+              </div>
+              <ul className='training-list'>
+                <li>Developed a secure full-stack application for dynamic user-note handling (CRUD) with JWT authentication</li>
+                <li>Engineered robust backend RESTful APIs with a seamless, responsive layout across mobile and desktop</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>E-Commerce Web Application (ShopVerse)</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>Flask</span><span className='chip'>MySQL</span><span className='chip'>Razorpay</span><span className='chip'>Bootstrap</span>
+                </div>
+              </div>
+              <ul className='training-list'>
+                <li>Built a complete full-stack platform enabling product browsing, cart management, and simulated checkout with Razorpay integration</li>
+                <li>Governed session tracking and relational data persistence with Flask and MySQL</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>Mini Multi-Tool Agent</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>Python</span><span className='chip'>LLM Function Calling</span><span className='chip'>ReAct Pattern</span>
+                </div>
+              </div>
+              <ul className='training-list'>
+                <li>Implemented a tool-using agent (ReAct pattern) with LLM function calling for calculator, date/time, and lookup tools, with step caps to bound token usage</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>Review Sentiment Classifier</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>Python</span><span className='chip'>Hugging Face</span><span className='chip'>LoRA/PEFT</span><span className='chip'>scikit-learn</span>
+                </div>
+              </div>
+              <ul className='training-list'>
+                <li>Built and evaluated a sentiment classifier (accuracy, F1, confusion matrix), comparing a zero-cost few-shot baseline against a LoRA fine-tuned model</li>
+              </ul>
+            </div>
+
           </div>
         </div>
 
