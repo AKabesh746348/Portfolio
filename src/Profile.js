@@ -130,12 +130,10 @@ function Profile() {
             <div className='training-block'>
               <h3 className='card-title'>Greens Technologies, Anna Nagar, Chennai</h3>
               <span className='chip highlight'>April 2025 — Present</span>
-              <p className='card-subtitle'>Python Full Stack &amp; Generative AI Developer</p>
+              <p className='card-subtitle'>Python Full Stack </p>
               <ul className='training-list'>
-                <li>Gained execution mastery over the complete SDLC; structured complex web components and integrated custom RESTful APIs using Flask and ReactJS</li>
-                <li>Built Generative AI features — RAG pipelines, embeddings, vector databases (ChromaDB/FAISS), prompt engineering, and LLM tool-calling agents</li>
-                <li>Governed concurrent data structures via MongoDB &amp; MySQL; validated endpoints with Postman and versioned via GitHub</li>
-                <li>Developed and deployed full-stack AI applications including a Chat-with-PDF bot, FAQ chatbot, and e-commerce platform</li>
+                <li>Trained across the full software development lifecycle: building web components and integrating custom RESTful APIs</li>
+                <li>Worked with MongoDB and MySQL, tested endpoints with Postman, and used GitHub for version control.</li>
               </ul>
             </div>
 
