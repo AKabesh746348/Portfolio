@@ -20,7 +20,7 @@ function Profile() {
         {/* HERO SECTION */}
         <div className='hero-section'>
           <h1 className='ak'>ABESH KUMAR</h1>
-          <p className='subtitle'>Generative AI Developer</p>
+          <p className='subtitle'>PYTHON FULL STACK DEVELOPER</p>
         </div>
 
         <div class="container-fluid">
@@ -60,15 +60,15 @@ function Profile() {
               <div className='glass-card'>
                 <h2 className='section-heading'>PROFILE</h2>
                 <p className='body-text'>
-                  Generative AI Developer with an MCA background and a Python full-stack foundation.
-                  Hands-on with Retrieval-Augmented Generation (RAG), embeddings, vector databases,
-                  prompt engineering, and agent/tool-calling — building cost-efficient LLM applications
-                  using Flask and ReactJS.
+                 Python Full Stack Developer with an MCA, trained in building web applications using Flask, ReactJS, and REST APIs. 
+                 Comfortable working across the stack — from React interfaces to Flask services backed by MySQL and MongoDB. 
+                 Quick to learn, take ownership of tasks, and ship working features. 
+                 Seeking a junior developer role where I can contribute to real projects and keep growing.
                 </p>
                 <p className='body-text'>
                   Experienced building secure, responsive web applications, designing RESTful APIs,
                   and managing SQL/NoSQL databases. Proven capability to assume full task ownership,
-                  learn rapidly, and deliver quality software. Seeking a Generative AI or Python
+                  learn rapidly, and deliver quality software. Seeking Python
                   Full Stack role to apply and grow these skills.
                 </p>
               </div>
