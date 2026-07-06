@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const GITHUB_USER = 'AKabesh746348';
-const CHAT_API = process.env.REACT_APP_CHAT_API || 'http://localhost:5002/chat';
 const EXCLUDE_REPOS = ['TextLens'];
 
 export function GitHubProjects() {
@@ -53,86 +52,6 @@ export function GitHubProjects() {
           </div>
         </a>
       ))}
-    </div>
-  );
-}
-
-export function AskMeBot() {
-  const [messages, setMessages] = useState([
-    { role: 'assistant', text: "Hi! I'm an AI assistant trained on Abesh's profile. Ask me anything about him!" }
-  ]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const bottomRef = useRef(null);
-
-  useEffect(() => {
-    if (messages.length > 1 || loading) {
-      bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [messages, loading]);
-
-  const send = async () => {
-    const text = input.trim();
-    if (!text || loading) return;
-    setInput('');
-    setMessages(prev => [...prev, { role: 'user', text }]);
-    setLoading(true);
-    try {
-      const res = await fetch(CHAT_API, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: text }),
-      });
-      const data = await res.json();
-      setMessages(prev => [...prev, { role: 'assistant', text: data.reply || 'No response.' }]);
-    } catch {
-      setMessages(prev => [
-        ...prev,
-        { role: 'assistant', text: 'Sorry, the chat service is offline right now.' }
-      ]);
-    }
-    setLoading(false);
-  };
-
-  const handleKey = e => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      send();
-    }
-  };
-
-  return (
-    <div className="chatbot-container">
-      <div className="chat-messages">
-        {messages.map((m, i) => (
-          <div key={i} className={`chat-bubble ${m.role}`}>
-            {m.text}
-          </div>
-        ))}
-        {loading && (
-          <div className="chat-bubble assistant typing">
-            <span></span><span></span><span></span>
-          </div>
-        )}
-        <div ref={bottomRef} />
-      </div>
-      <div className="chat-input-row">
-        <input
-          className="chat-input"
-          value={input}
-          onChange={e => setInput(e.target.value)}
-          onKeyDown={handleKey}
-          placeholder="Ask me about Abesh…"
-          disabled={loading}
-        />
-        <button
-          className="chat-send-btn"
-          onClick={send}
-          disabled={loading || !input.trim()}
-        >
-          Send
-        </button>
-      </div>
     </div>
   );
 }
