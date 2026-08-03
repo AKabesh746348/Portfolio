@@ -60,9 +60,10 @@ function Profile() {
               <div className='glass-card'>
                 <h2 className='section-heading'>PROFILE</h2>
                 <p className='body-text'>
-                  Python full-stack developer (MCA) who has designed and shipped a live, client-facing web product
-                  using ReactJS, Flask, and REST APIs. Comfortable owning features end to end across MySQL and
-                  MongoDB, writing clean, maintainable code, and picking up new tools and frameworks quickly.
+                  Python full-stack developer (MCA) currently interning on a production logistics dashboard built
+                  with ReactJS, Flask, and MySQL, with a live client-facing product already shipped and in use.
+                  Comfortable owning features end to end — REST API design, relational and document data
+                  modelling, authentication and role-based access control — and writing clean, maintainable code.
                 </p>
                 <p className='body-text'>
                   Experienced building secure, responsive web applications, designing RESTful APIs, and managing
@@ -116,6 +117,28 @@ function Profile() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* INTERNSHIP EXPERIENCE */}
+        <div className='content-section'>
+          <div className='glass-card wide'>
+            <h2 className='section-heading'><FaBriefcase className='heading-icon' />INTERNSHIP EXPERIENCE</h2>
+            <div className='project-entry'>
+              <div className='project-entry-header'>
+                <h3 className='card-title'>Python Full Stack Developer Intern (Remote) — FemtoSoft Technologies, Chennai</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>ReactJS 18</span><span className='chip'>Flask</span><span className='chip'>MySQL 8</span><span className='chip'>SCSS</span><span className='chip'>ReportLab</span>
+                </div>
+              </div>
+              <p className='card-subtitle'>Logistics Consignment Dashboard — 2026 to Present</p>
+              <ul className='training-list'>
+                <li>Built a full-stack freight consignment management system — 14 REST endpoints over a normalised 6-table MySQL schema, served to a React single-page frontend by a blueprint-structured Flask API</li>
+                <li>Implemented role-based access control for Admin, Manager, and Branch User roles using PBKDF2-hashed passwords and signed HTTP-only session cookies, with branch-level data scoping enforced in SQL on the server</li>
+                <li>Automated consignment number generation in BRANCH/FY/000123 format using atomic per-branch, per-financial-year sequence counters, and server-side freight calculation on chargeable weight (actual vs. volumetric)</li>
+                <li>Added an audit trail capturing before/after snapshots of every create, update, and delete with a field-level diff viewer, plus one-click A4 PDF consignment notes generated via ReportLab</li>
+              </ul>
             </div>
           </div>
         </div>
