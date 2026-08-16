@@ -32,6 +32,18 @@
   --radius-lg: 12px;
 
   --container: 1020px;
+  --header-h:  61px; // 60px bar + 1px bottom border
+}
+
+// The header is sticky, so an anchor jump would land the section underneath it.
+// Offset every in-page jump by the header plus a little breathing room.
+html {
+  scroll-padding-top: calc(var(--header-h) + 8px);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 @mixin dark {
