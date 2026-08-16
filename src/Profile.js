@@ -217,6 +217,23 @@ function Profile() {
 
             <div className='project-entry'>
               <div className='project-entry-header'>
+                <h3 className='card-title'>Email Sender Application</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>ReactJS 19</span><span className='chip'>Flask</span><span className='chip'>Flask-Mail</span><span className='chip'>SMTP</span><span className='chip'>SCSS</span>
+                </div>
+              </div>
+              <span className='chip'>2026</span>
+              <ul className='training-list'>
+                <li>Built a compose-and-send email client — a controlled React form for recipient, subject, and body posting JSON to a CORS-enabled Flask REST endpoint</li>
+                <li>Integrated Flask-Mail over Gmail SMTP with TLS for delivery, with server-side validation returning a 400 on a missing recipient and surfacing SMTP failures as API errors</li>
+                <li>Handled the full request lifecycle in the UI — a loading state that disables the send button, success and error banners, and an automatic form reset once the message is delivered</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
                 <h3 className='card-title'>Cloud-Based Notepad Application</h3>
                 <div className='project-stack-chips'>
                   <span className='chip'>Flask</span><span className='chip'>MongoDB Atlas</span><span className='chip'>ReactJS</span><span className='chip'>SCSS</span><span className='chip'>Bootstrap</span>
