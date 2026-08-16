@@ -245,22 +245,6 @@ function Profile() {
               </ul>
             </div>
 
-            <div className='divider'></div>
-
-            <div className='project-entry'>
-              <div className='project-entry-header'>
-                <h3 className='card-title'>Personal Portfolio Website</h3>
-                <div className='project-stack-chips'>
-                  <span className='chip'>ReactJS</span><span className='chip'>JavaScript</span><span className='chip'>HTML</span><span className='chip'>CSS</span><span className='chip'>SCSS</span>
-                </div>
-              </div>
-              <span className='chip'>2025</span>
-              <ul className='training-list'>
-                <li>Designed and deployed a responsive portfolio site to showcase projects, skills, and GitHub repositories</li>
-                <li>Built reusable React components for smooth navigation and faster page rendering</li>
-              </ul>
-            </div>
-
           </div>
         </div>
 
