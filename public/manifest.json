@@ -3,11 +3,6 @@
   "name": "Abesh Kumar — Python Full Stack Developer",
   "icons": [
     {
-      "src": "favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any"
-    },
-    {
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
