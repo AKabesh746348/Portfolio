@@ -149,6 +149,24 @@ function Profile() {
             <h2 className='section-heading'><FaBriefcase className='heading-icon' />FREELANCE EXPERIENCE</h2>
             <div className='project-entry'>
               <div className='project-entry-header'>
+                <h3 className='card-title'>Full Stack Developer (Freelance) — MindMate</h3>
+                <div className='project-stack-chips'>
+                  <span className='chip'>ReactJS 19</span><span className='chip'>Flask</span><span className='chip'>JWT</span><span className='chip'>SCSS</span><span className='chip'>Bootstrap 5</span>
+                </div>
+              </div>
+              <p className='card-subtitle'>Therapist Directory &amp; Booking Platform — 2026 to Present (ongoing)</p>
+              <ul className='training-list'>
+                <li>Building a mental-health therapist directory as a ReactJS single-page application backed by a blueprint-structured Flask REST API of 26 endpoints</li>
+                <li>Implemented JWT session authentication across three account types — client, clinician, and admin — with every protected endpoint re-checking the role server-side against the stored user record rather than trusting the token claim</li>
+                <li>Delivered an admin dashboard for platform-wide booking management and therapist application review, plus a separate clinician portal where each clinician sees only their own schedule, scoped from the authenticated token</li>
+                <li>Designed a glassmorphism design system in SCSS over a re-themed Bootstrap 5.3, with reduced-motion support, and covered the auth, admin, and clinician flows with a Jest / React Testing Library suite</li>
+              </ul>
+            </div>
+
+            <div className='divider'></div>
+
+            <div className='project-entry'>
+              <div className='project-entry-header'>
                 <h3 className='card-title'>Full Stack Developer (Freelance) — thangaiya.in</h3>
                 <div className='project-stack-chips'>
                   <span className='chip'>ReactJS</span><span className='chip'>Flask</span><span className='chip'>PostgreSQL</span><span className='chip'>Razorpay</span>
