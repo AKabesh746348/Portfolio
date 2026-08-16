@@ -278,12 +278,12 @@ function Profile() {
               </div>
             </div>
 
-            <div className="split" style={{ marginTop: '12px' }}>
+            <div className="split">
               <div className="entry">
                 <div className="entry-head">
                   <h3 className="entry-title">Strengths</h3>
                 </div>
-                <ul className="plain-list" style={{ marginTop: '12px' }}>
+                <ul className="plain-list">
                   <li>Problem-solving and full ownership of tasks through to delivery</li>
                   <li>Quick to grasp requirements and contribute effectively</li>
                   <li>Team collaboration with a continuous-learning mindset</li>
@@ -294,7 +294,7 @@ function Profile() {
                 <div className="entry-head">
                   <h3 className="entry-title">Languages</h3>
                 </div>
-                <ul className="plain-list" style={{ marginTop: '12px' }}>
+                <ul className="plain-list">
                   <li>English — professional working proficiency</li>
                   <li>Tamil — native</li>
                 </ul>

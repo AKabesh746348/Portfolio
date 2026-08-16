@@ -354,6 +354,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
+  align-items: stretch;
 
   @media (max-width: 760px) { grid-template-columns: 1fr; }
 }
@@ -397,17 +398,24 @@
 }
 
 // ─── Two-column blocks ───
+//
+// Cards stretch to the tallest in their row. Sizing each to its own content
+// (align-items: start) leaves the shorter column ending mid-air, which reads
+// as scattered rather than as a grid — the columns hold different amounts of
+// content and always will.
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
-  align-items: start;
+  align-items: stretch;
+
+  & + .split { margin-top: 12px; }
 
   @media (max-width: 860px) { grid-template-columns: 1fr; }
 }
 
 .plain-list {
-  margin: 0;
+  margin: 12px 0 0;
   padding-left: 18px;
   color: var(--text-muted);
   font-size: 14px;
