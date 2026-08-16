@@ -229,22 +229,6 @@ function Profile() {
               </ul>
             </div>
 
-            <div className='divider'></div>
-
-            <div className='project-entry'>
-              <div className='project-entry-header'>
-                <h3 className='card-title'>E-Commerce Web Application</h3>
-                <div className='project-stack-chips'>
-                  <span className='chip'>ReactJS</span><span className='chip'>Redux</span><span className='chip'>Flask</span><span className='chip'>MongoDB</span><span className='chip'>Bootstrap</span>
-                </div>
-              </div>
-              <span className='chip'>2024 &middot; MCA Academic Project</span>
-              <ul className='training-list'>
-                <li>Built a full-stack shopping platform with product browsing, a Redux-managed shopping cart, and a simulated checkout flow</li>
-                <li>Used Flask to manage user sessions and handle application data in MongoDB</li>
-              </ul>
-            </div>
-
           </div>
         </div>
 
