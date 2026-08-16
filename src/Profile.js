@@ -6,7 +6,6 @@ import { MdOutlineAlternateEmail, MdPhone } from "react-icons/md";
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaGithub, FaLinkedin, FaGraduationCap, FaCode, FaBriefcase } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb, SiMysql, SiPostgresql, SiPostman, SiBootstrap, SiSass, SiFlask } from "react-icons/si";
-import { GitHubProjects } from "./PortfolioWidgets";
 
 function Profile() {
 
@@ -246,14 +245,6 @@ function Profile() {
               </ul>
             </div>
 
-          </div>
-        </div>
-
-        {/* GITHUB PROJECTS */}
-        <div className='content-section'>
-          <div className='glass-card wide'>
-            <h2 className='section-heading'><FaGithub className='heading-icon' />GITHUB PROJECTS</h2>
-            <GitHubProjects />
           </div>
         </div>
 
