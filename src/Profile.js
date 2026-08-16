@@ -135,7 +135,7 @@ function Profile() {
               <p className='card-subtitle'>Logistics Consignment Dashboard — 2026 to Present</p>
               <ul className='training-list'>
                 <li>Built a full-stack freight consignment management system — 14 REST endpoints over a normalised 6-table MySQL schema, served to a React single-page frontend by a blueprint-structured Flask API</li>
-                <li>Implemented role-based access control for Admin, Manager, and Branch User roles using PBKDF2-hashed passwords and signed HTTP-only session cookies, with branch-level data scoping enforced in SQL on the server</li>
+                <li>Implemented role-based access control for Admin, Manager, and Branch User roles using scrypt-hashed passwords and signed HTTP-only session cookies, with branch-level data scoping enforced in SQL on the server</li>
                 <li>Automated consignment number generation in BRANCH/FY/000123 format using atomic per-branch, per-financial-year sequence counters, and server-side freight calculation on chargeable weight (actual vs. volumetric)</li>
                 <li>Added an audit trail capturing before/after snapshots of every create, update, and delete with a field-level diff viewer, plus one-click A4 PDF consignment notes generated via ReportLab</li>
               </ul>
