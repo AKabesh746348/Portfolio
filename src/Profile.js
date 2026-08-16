@@ -6,14 +6,14 @@ import { MdOutlineAlternateEmail, MdPhone } from "react-icons/md";
 import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaGithub, FaLinkedin, FaGraduationCap, FaCode, FaBriefcase } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMongodb, SiMysql, SiPostgresql, SiPostman, SiBootstrap, SiSass, SiFlask } from "react-icons/si";
+import ThemeToggle from "./ThemeToggle";
 
 function Profile() {
 
   return (
     <div>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <div className='background'>
+        <ThemeToggle />
 
         {/* HERO SECTION */}
         <div className='hero-section'>
@@ -21,9 +21,9 @@ function Profile() {
           <p className='subtitle'>PYTHON FULL STACK DEVELOPER</p>
         </div>
 
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-6">
+        <div className='container-fluid'>
+          <div className='row'>
+            <div className='col-12 col-lg-6'>
               <div className='image-container'>
                 <img src={abesh} className='abesh' alt='abesh'></img>
                 <span className='floating-badge badge-1'>&lt;/&gt;</span>
@@ -33,7 +33,7 @@ function Profile() {
                 <span className='floating-badge badge-5'>[ ]</span>
               </div>
             </div>
-            <div class="col-6">
+            <div className='col-12 col-lg-6'>
               <div className='technical-skills-wrapper'>
                 <h2 className='section-heading'>TECHNICAL SKILLS</h2>
                 <div className='skills-grid'>
@@ -42,14 +42,14 @@ function Profile() {
                   <div className='skill-icon' style={{ '--glow-color': '#F7DF1E' }}><IoLogoJavascript /><span>JavaScript</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#61DAFB' }}><FaReact /><span>ReactJS</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#3776AB' }}><FaPython /><span>Python</span></div>
-                  <div className='skill-icon' style={{ '--glow-color': '#FFFFFF' }}><SiFlask /><span>Flask</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': 'var(--icon-neutral)' }}><SiFlask /><span>Flask</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#47A248' }}><SiMongodb /><span>MongoDB</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#4479A1' }}><SiMysql /><span>MySQL</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#4169E1' }}><SiPostgresql /><span>PostgreSQL</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#7952B3' }}><SiBootstrap /><span>Bootstrap</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#CC6699' }}><SiSass /><span>SCSS</span></div>
                   <div className='skill-icon' style={{ '--glow-color': '#FF6C37' }}><SiPostman /><span>Postman</span></div>
-                  <div className='skill-icon' style={{ '--glow-color': '#ffffff' }}><FaGithub /><span>GitHub</span></div>
+                  <div className='skill-icon' style={{ '--glow-color': 'var(--icon-neutral)' }}><FaGithub /><span>GitHub</span></div>
                 </div>
               </div>
             </div>
@@ -74,9 +74,9 @@ function Profile() {
 
             {/* EDUCATION & STRENGTHS */}
             <div>
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-6">
+              <div className='container-fluid'>
+                <div className='row'>
+                  <div className='col-12 col-lg-6'>
                     <div className='glass-card'>
                       <h2 className='section-heading'><FaGraduationCap className='heading-icon' />EDUCATION</h2>
                       <h3 className='card-title'>Bachelor of Computer Science</h3>
@@ -103,7 +103,7 @@ function Profile() {
                       </div>
                     </div>
                   </div>
-                  <div class="col-6">
+                  <div className='col-12 col-lg-6'>
                     <div className='glass-card'>
                       <h2 className='section-heading'>STRENGTHS</h2>
                       <ul className='skills-list'>
