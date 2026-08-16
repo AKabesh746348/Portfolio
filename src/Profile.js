@@ -254,6 +254,18 @@ function Profile() {
                   <span className="entry-date">2019 — 2022</span>
                 </div>
                 <p className="entry-sub">PRIST University, Thanjavur · First Class (7.8 / 10)</p>
+
+                <div className="stack-divider" />
+
+                {/* Languages live here rather than in a card of their own:
+                    two short lines cannot fill a column beside Training. */}
+                <div className="entry-head">
+                  <h3 className="entry-title">Languages</h3>
+                </div>
+                <ul className="plain-list">
+                  <li>English — professional working proficiency</li>
+                  <li>Tamil — native</li>
+                </ul>
               </div>
 
               <div className="entry">
@@ -278,27 +290,18 @@ function Profile() {
               </div>
             </div>
 
-            <div className="split">
-              <div className="entry">
-                <div className="entry-head">
-                  <h3 className="entry-title">Strengths</h3>
-                </div>
-                <ul className="plain-list">
-                  <li>Problem-solving and full ownership of tasks through to delivery</li>
-                  <li>Quick to grasp requirements and contribute effectively</li>
-                  <li>Team collaboration with a continuous-learning mindset</li>
-                  <li>Attention to detail and time management under deadlines</li>
-                </ul>
+            {/* Full width with the items in two columns: four short lines in a
+                half-width card left the other half empty. */}
+            <div className="entry entry-spaced">
+              <div className="entry-head">
+                <h3 className="entry-title">Strengths</h3>
               </div>
-              <div className="entry">
-                <div className="entry-head">
-                  <h3 className="entry-title">Languages</h3>
-                </div>
-                <ul className="plain-list">
-                  <li>English — professional working proficiency</li>
-                  <li>Tamil — native</li>
-                </ul>
-              </div>
+              <ul className="plain-list plain-list-cols">
+                <li>Problem-solving and full ownership of tasks through to delivery</li>
+                <li>Quick to grasp requirements and contribute effectively</li>
+                <li>Team collaboration with a continuous-learning mindset</li>
+                <li>Attention to detail and time management under deadlines</li>
+              </ul>
             </div>
           </section>
 

@@ -425,6 +425,19 @@
   li::marker { color: var(--border-strong); }
 }
 
+.entry-spaced { margin-top: 12px; }
+
+// Two columns for short list items, so a full-width card does not run as a
+// single narrow ribbon of text down the left edge.
+.plain-list-cols {
+  columns: 2;
+  column-gap: 36px;
+
+  li { break-inside: avoid; }
+
+  @media (max-width: 760px) { columns: 1; }
+}
+
 .stack-divider {
   height: 1px;
   margin: 16px 0;
