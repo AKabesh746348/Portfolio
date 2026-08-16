@@ -233,15 +233,16 @@ function Profile() {
 
             <div className='project-entry'>
               <div className='project-entry-header'>
-                <h3 className='card-title'>Cloud-Based Notepad Application</h3>
+                <h3 className='card-title'>DevVault — Cloud Code-Snippet Vault</h3>
                 <div className='project-stack-chips'>
-                  <span className='chip'>Flask</span><span className='chip'>MongoDB Atlas</span><span className='chip'>ReactJS</span><span className='chip'>SCSS</span><span className='chip'>Bootstrap</span>
+                  <span className='chip'>ReactJS</span><span className='chip'>Flask</span><span className='chip'>MongoDB Atlas</span><span className='chip'>SCSS</span><span className='chip'>Bootstrap</span>
                 </div>
               </div>
               <span className='chip'>2025</span>
               <ul className='training-list'>
-                <li>Built a full-stack note-taking app with create, read, update, and delete operations and secure user authentication</li>
-                <li>Developed REST APIs for the backend and a responsive React interface that works across mobile and desktop</li>
+                <li>Built a cloud workspace for storing code snippets, organised per account into separate front-end, back-end and database areas</li>
+                <li>Implemented full create, read, update and delete operations with user authentication, served by Flask REST APIs over MongoDB Atlas</li>
+                <li>Built the interface on a shared design-token system, with a responsive React front end that works across mobile and desktop</li>
               </ul>
             </div>
 
