@@ -64,16 +64,17 @@ const EXPERIENCE = [
     ],
   },
   {
-    title: 'Full Stack Developer (Freelance) — MindMate',
+    title: 'Full Stack Developer (Freelance) — MindlyFriend',
     org: 'Therapist Directory & Booking Platform',
     date: '2026 — Present',
-    sub: 'Ongoing engagement',
-    tags: ['ReactJS 19', 'Flask', 'JWT', 'SCSS', 'Bootstrap 5'],
+    sub: 'mindlyfriend.com — ongoing engagement',
+    tags: ['ReactJS 19', 'Flask', 'PostgreSQL', 'JWT', 'SMTP', 'SCSS'],
     points: [
       'Building a mental-health therapist directory as a ReactJS single-page application backed by a blueprint-structured Flask REST API of 26 endpoints.',
       'Implemented JWT session authentication across three account types — client, clinician, and admin — with every protected endpoint re-checking the role server-side against the stored user record rather than trusting the token claim.',
       'Delivered an admin dashboard for platform-wide booking management and therapist application review, plus a separate clinician portal where each clinician sees only their own schedule, scoped from the authenticated token.',
-      'Covered the auth, admin, and clinician flows with a Jest / React Testing Library suite, and built the interface on a design-token system with reduced-motion support.',
+      'Moved accounts, applications and enquiries onto PostgreSQL, putting correctness in the schema: a unique index settles concurrent signups and review decisions guard on status in the UPDATE, so two reviewers cannot both approve.',
+      'Wired transactional email over SMTP with duplicate suppression, and covered the auth, admin and clinician flows with a Jest / React Testing Library suite of 63 tests.',
     ],
   },
   {
