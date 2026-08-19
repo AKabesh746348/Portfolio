@@ -68,6 +68,7 @@ const EXPERIENCE = [
     org: 'Therapist Directory & Booking Platform',
     date: '2026 — Present',
     sub: 'mindlyfriend.com — ongoing engagement',
+    href: 'https://mindlyfriend.com',
     tags: ['ReactJS 19', 'Flask', 'PostgreSQL', 'JWT', 'SMTP', 'SCSS'],
     points: [
       'Building a mental-health therapist directory as a ReactJS single-page application backed by a blueprint-structured Flask REST API of 26 endpoints.',
@@ -82,6 +83,7 @@ const EXPERIENCE = [
     org: 'Client: Dr. Y. Johnson Thangaiya, Tamil scholar & author',
     date: '2026',
     sub: 'Live at thangaiya.in',
+    href: 'https://thangaiya.in',
     tags: ['ReactJS', 'Flask', 'PostgreSQL', 'Razorpay'],
     points: [
       'Built and deployed a live Tamil-language ebook store as a ReactJS single-page application, serving a Tamil-reading customer base.',
@@ -113,7 +115,7 @@ const PROJECTS = [
   },
 ];
 
-function Entry({ title, org, date, sub, tags, points }) {
+function Entry({ title, org, date, sub, href, tags, points }) {
   return (
     <article className="entry">
       <div className="entry-head">
@@ -121,7 +123,15 @@ function Entry({ title, org, date, sub, tags, points }) {
         {date && <span className="entry-date">{date}</span>}
       </div>
       {org && <p className="entry-sub">{org}</p>}
-      {sub && <p className="entry-sub">{sub}</p>}
+      {sub && (
+        <p className="entry-sub">
+          {href ? (
+            <a href={href} target="_blank" rel="noopener noreferrer">{sub}</a>
+          ) : (
+            sub
+          )}
+        </p>
+      )}
       <ul className="entry-list">
         {points.map(point => <li key={point}>{point}</li>)}
       </ul>
